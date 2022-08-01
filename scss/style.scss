@@ -119,9 +119,11 @@ a{
     #show{
         .container{
             padding:0;
+            height:510px;
            
                 display: flex;
                 .left{
+                    display: flex;
                     background-color: $bc-basic;
                     width:334px ;
                     height:355px ;
@@ -130,6 +132,7 @@ a{
                         margin: 109px 57px 90px;
                         width:220px;
                         height:156px;
+                        flex-shrink: 0;
                     }
                 }
                 .right{

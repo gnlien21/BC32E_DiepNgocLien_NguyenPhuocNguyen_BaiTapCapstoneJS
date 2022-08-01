@@ -103,9 +103,11 @@ a {
 
 .product #show .container {
   padding: 0;
+  height: 510px;
   display: flex;
 }
 .product #show .container .left {
+  display: flex;
   background-color: #f8f8f8;
   width: 334px;
   height: 355px;
@@ -115,6 +117,7 @@ a {
   margin: 109px 57px 90px;
   width: 220px;
   height: 156px;
+  flex-shrink: 0;
 }
 .product #show .container .right {
   position: relative;

@@ -1,0 +1,27 @@
+.btn-buy{
+    background-color: $bg-c-light-yellow;
+    color: $text-c-light;
+    padding: 13px 34px;
+    border: none;
+    line-height: 24.2px;
+    font-size: 20px;
+    font-weight: $fw-light;
+}
+
+.btn-buy-dark {
+    background-color: $bg-c-dark-yellow;
+    color: $text-c-dark;
+    padding: 17px 30px;
+    border: none;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: $fw-light;
+
+}
+
+.back-to-top {
+    background-color: $bg-c-none;
+    color: $text-c-dark;
+    font-size: 40px;
+    position: fixed;
+}

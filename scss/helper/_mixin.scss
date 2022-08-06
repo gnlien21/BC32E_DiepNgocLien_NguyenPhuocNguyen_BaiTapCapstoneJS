@@ -1,0 +1,6 @@
+@mixin TextFormatter ($color, $bg-color, $fs, $fw){
+    color: $color;
+    background-color: $bg-color;
+    font-size: $fs;
+    font-weight: $fw;
+}

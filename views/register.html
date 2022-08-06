@@ -77,61 +77,63 @@
       <div class="container">
         <h1>Register</h1>
         <div class="form-group row">
-          <div class="col-6">
+          <div class="text-box d-flex">
+            <span class="input-name">Email</span>
             <input
-              class="form-control required"
+              class="required"
               id="email"
               type="text"
               name="email"
-              placeholder="Email"
             />
+            <span class="required-field-alert">(*)</span>
           </div>
-          <div class="col-6">
+          <div class="text-box d-flex">
+            <span class="input-name">Name</span>
             <input
               class="form-control required"
               id="name"
               type="text"
               name="name"
-              placeholder="Name"
             />
+            <span class="required-field-alert">(*)</span>
           </div>
-          <div class="col-6">
+          <div class="text-box d-flex">
+            <span class="input-name">Password</span>
             <input
-              class="form-control required"
+              class="required"
               id="password"
               type="password"
-              name="email"
-              placeholder="Password"
+              name="phone"
             />
+            <span class="required-field-alert">(*)</span>
           </div>
-          <div class="col-6">
+          <div class="text-box d-flex">
+            <span class="input-name">Phone</span>
             <input
-              class="form-control required"
-              id="phoneNumber"
+              class="required"
+              id="phone"
               type="number"
               name="phone"
-              placeholder="Phone"
             />
+            <span class="required-field-alert">(*)</span>
           </div>
-          <div class="col-6">
+          <div class="text-box d-flex">
+            <span class="input-name">Confirm</span>
             <input
-              class="form-control required"
+              class="required"
               id="passwordConfirm"
               type="password"
-              name="email"
-              placeholder="Password Confirm"
+              name="passwordConfirm"
             />
+            <span class="required-field-alert">(*)</span>
           </div>
-          <div class="col-6">
-            <span>Gender</span>
-            <input type="radio" name="gender" value="male" /> Male
-            <input type="radio" name="gender" value="female" /> Female
+          <div class="gender-input d-flex">
+            <span class="input-name">Gender</span>
+            <input class="form-control" type="radio" name="gender" value="male" /><label class="label">Male</label>
+            <input class="form-control" type="radio" name="gender" value="female" /><label class="label">Female</label>
           </div>
-
-          <div class="col-6"></div>
-          <div class="col-6">
-            <button id="btnSubmit">Submit</button>
-          </div>
+          <div></div>
+          <button class="btn-submit" id="btnSubmit">Submit</button>
         </div>
       </div>
     </section>

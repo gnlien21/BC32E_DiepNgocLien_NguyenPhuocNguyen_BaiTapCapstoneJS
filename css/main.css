@@ -25,6 +25,15 @@
   font-weight: 300;
 }
 
+.btn-submit {
+  background-color: #AE18E2;
+  border: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  padding: 6px 98px 12px 88px;
+}
+
 .header .container {
   background-color: #000000;
 }

@@ -25,6 +25,15 @@
   font-weight: 300;
 }
 
+.btn-submit {
+  background-color: #AE18E2;
+  border: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  padding: 6px 98px 12px 88px;
+}
+
 .header .container {
   background-color: #000000;
 }
@@ -152,5 +161,69 @@ footer a {
   color: #db8b88;
   background-color: transparent;
   font-size: 13px;
+  font-weight: 400;
+}
+
+.register-form .container {
+  background-color: #FFFCFC;
+}
+
+.register-form .container h1 {
+  text-align: center;
+  color: #000;
+  background-color: transparent;
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.register-form .container .form-group {
+  padding: 60px 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 113px;
+  row-gap: 78px;
+}
+
+.register-form .container .form-group .text-box {
+  align-items: center;
+  border-bottom: solid 5px #AE18E2;
+}
+
+.register-form .container .form-group .text-box .input-name {
+  color: #000;
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.register-form .container .form-group .text-box input {
+  border: none;
+  width: 100%;
+  background-color: #FFFCFC;
+}
+
+.register-form .container .form-group .text-box .required-field-alert {
+  color: #F50E0E;
+  background-color: transparent;
+  font-size: 20;
+  font-weight: 300;
+}
+
+.register-form .container .form-group .gender-input .input-name {
+  color: #000;
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.register-form .container .form-group .gender-input .form-control {
+  accent-color: #AE18E2;
+}
+
+.register-form .container .form-group .gender-input .label {
+  color: #000;
+  background-color: transparent;
+  font-size: 30px;
   font-weight: 400;
 }

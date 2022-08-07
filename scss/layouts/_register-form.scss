@@ -1,0 +1,50 @@
+.register-form{
+    .container{
+        background-color: $bg-register-pink;
+        h1{
+            text-align: center;
+            @include TextFormatter($text-c-dark, $bg-c-none, $fs-register-h1, $fw-semi-bold);
+            padding-top: 30px;
+        }
+        .form-group{
+            padding: 60px 120px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 113px;
+            row-gap: 78px;
+            .text-box{
+                align-items: center;
+
+                border-bottom: solid 5px $border-c-pink;
+
+                
+                .input-name{
+                    @include TextFormatter($text-c-dark, $bg-c-none,$fs-register-input, $fw-semi-bold);
+                }
+
+                input{
+                    border: none;
+                    width: 100%;
+                    background-color: $bg-register-pink;
+                }
+
+                .required-field-alert{
+                    @include TextFormatter($text-c-red, $bg-c-none,20, $fw-light);
+                }
+
+            }
+            .gender-input{
+                .input-name{
+                    @include TextFormatter($text-c-dark, $bg-c-none,$fs-register-input, $fw-semi-bold);
+                }
+                .form-control{
+                    accent-color: $text-c-pink;
+                }
+                .label{
+                    @include TextFormatter($text-c-dark, $bg-c-none,$fs-register-input, $fw-semi-bold);
+
+                }
+            }
+        }
+    }
+}

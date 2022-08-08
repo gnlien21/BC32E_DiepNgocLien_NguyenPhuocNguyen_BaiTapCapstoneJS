@@ -1,50 +1,142 @@
-.register-form{
-    .container{
-        background-color: $bg-register-pink;
-        h1{
-            text-align: center;
-            @include TextFormatter($text-c-dark, $bg-c-none, $fs-register-h1, $fw-semi-bold);
-            padding-top: 30px;
-        }
-        .form-group{
-            padding: 60px 120px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 113px;
-            row-gap: 78px;
-            .text-box{
-                align-items: center;
-
-                border-bottom: solid 5px $border-c-pink;
-
-                
-                .input-name{
-                    @include TextFormatter($text-c-dark, $bg-c-none,$fs-register-input, $fw-semi-bold);
-                }
-
-                input{
-                    border: none;
-                    width: 100%;
-                    background-color: $bg-register-pink;
-                }
-
-                .required-field-alert{
-                    @include TextFormatter($text-c-red, $bg-c-none,20, $fw-light);
-                }
-
-            }
-            .gender-input{
-                .input-name{
-                    @include TextFormatter($text-c-dark, $bg-c-none,$fs-register-input, $fw-semi-bold);
-                }
-                .form-control{
-                    accent-color: $text-c-pink;
-                }
-                .label{
-                    @include TextFormatter($text-c-dark, $bg-c-none,$fs-register-input, $fw-semi-bold);
-
-                }
-            }
-        }
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.register-form {
+  .container {
+    background-color: $bg-register-pink;
+    h1 {
+      text-align: center;
+      @include TextFormatter(
+        $text-c-dark,
+        $bg-c-none,
+        $fs-register-h1,
+        $fw-semi-bold
+      );
+      // padding-top: 30px;
+      margin-bottom: 0;
     }
+    .form-group {
+      padding: 62px 120px 40px;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 113px;
+      gap: 33px 99px;
+      .text-box {
+        align-items: center;
+
+        border-bottom: solid 5px $border-c-pink;
+
+        .input-name {
+          @include TextFormatter(
+            $text-c-dark,
+            $bg-c-none,
+            $fs-register-input,
+            $fw-semi-bold
+          );
+        }
+
+        input {
+          box-shadow: none;
+          font-size: 30px;
+          border: none;
+          outline: none;
+          width: 100%;
+          background-color: $bg-register-pink;
+        }
+
+        .required-field-alert {
+          @include TextFormatter($text-c-red, $bg-c-none, 20, $fw-light);
+        }
+      }
+      .gender-input {
+        // line-height:1;
+        // align-self: flex-end;
+        .input-name {
+          @include TextFormatter(
+            $text-c-dark,
+            $bg-c-none,
+            $fs-register-input,
+            $fw-semi-bold
+          );
+          align-self: end;
+          line-height:1;
+        }
+        .wrapper {
+          position: relative;
+          display: flex;
+          .check-radio {
+            position: relative;
+            display: flex;
+
+            .label {
+              @include TextFormatter(
+                $text-c-dark,
+                $bg-c-none,
+                $fs-register-input,
+                $fw-semi-bold
+              );
+              // position: absolute;
+              // left:123px;
+              margin: 0 0 0 107px;
+              align-self: end;
+              display: flex;
+              line-height: 1;
+            }
+            .radio {
+              position: absolute;
+              bottom: -8px;
+              left: 0px;
+              left: -32px;
+              z-index: 20;
+              width: 100%;
+              display: inline-block;
+              height: 42px;
+              visibility: hidden;
+            }
+            .root {
+              position: absolute;
+              width: 64.42px;
+              height: 50px;
+              border-radius: 60%;
+              background-color: #d9d9d9;
+              left: 28.54px;
+              line-height: 0;
+              display: flex;
+              align-self: end;
+              bottom: -25%;
+              
+
+              &::before {
+                content: " ";
+                width: 39.25px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                left: 12px;
+                display: block;
+
+                border-radius: 60%;
+              }
+            }
+
+            .radio:checked ~ .root::before {
+              background-color: $bg-c-pink;
+            }
+            
+          }
+        }
+
+        // .radio{
+        //     // position: relative;
+        //     // height:50px;
+        //     accent-color: $text-c-pink;
+        //     border-radius: 30px !important;
+        //     background-color:$bg-gender;
+
+        // }
+      }
+    }
+  }
 }

@@ -10,8 +10,7 @@ function getProductById() {
     .then((res) => {
       // productList = res.data.content
       var product = res.data.content;
-      console.log(products)
-      console.log(product);
+      
       
       renderProduct(product);
       pushSize(product.size)

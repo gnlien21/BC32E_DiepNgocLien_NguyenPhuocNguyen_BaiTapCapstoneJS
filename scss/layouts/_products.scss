@@ -14,6 +14,7 @@
       .item {
         background-color: $bg-item-grey;
         position: relative;
+        height: 360px;
         .item-info {
           padding: 45px 57px;
           img {
@@ -34,6 +35,7 @@
               $fs-product-p,
               $fw-light
             );
+            text-overflow: ellipsis;
           }
         }
         .buy-button {
@@ -54,13 +56,15 @@
             margin-bottom: 0;
           }
         }
-        .fa-heart {
+        i.fa-heart {
           position: absolute;
           width: 41px;
           height: 48px;
           left: 45px;
           top: 6px;
           color: $text-c-dark;
+          font-size: 30px;
+          line-height: 30px;
         }
       }
     }

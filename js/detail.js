@@ -1,16 +1,35 @@
 // getProductByIds
 // var productList = [];
+
+function ren(){
+  axios({
+    url: 'https://shop.cyberlearn.vn/api/Product',
+    method: 'GET'
+  })
+  .then(function(response){
+    const data = response.data.content
+
+    for (let i = 0; i < data.length; i++){
+      let productData = data[i]
+      console.log(productData.name) 
+    }
+  })
+}
+ren()
+
+
 var products = []
 function getProductById() {
   axios({
-    url: "https://shop.cyberlearn.vn/api/Product/getbyid?id=1",
+    url: "https://shop.cyberlearn.vn/api/Product/getbyid?id=4",
     method: "GET",
     responseType: "json",
   })
     .then((res) => {
       // productList = res.data.content
       var product = res.data.content;
-      
+      console.log(product);
+      console.log(res)
       
       renderProduct(product);
       pushSize(product.size)
@@ -82,7 +101,6 @@ function renderRelatedProduct(){
   
   for (let i = 0; i < products.length;i++){
       let product = products[i]
-    console.log(product)
       htmls += 
       `
           

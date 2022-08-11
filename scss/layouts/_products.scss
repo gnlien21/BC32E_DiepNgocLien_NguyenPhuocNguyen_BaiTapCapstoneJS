@@ -8,15 +8,34 @@
       font-weight: $fw-semi-bold;
     }
     .item-list {
+      padding-top: 50px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 67px;
+
+      @media screen and (max-width: 1200px){
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 67px;
+      }
+
+      @media screen and (max-width: 992px){
+        grid-template-columns: 1fr 1fr;
+        gap: 67px;
+      }
+
+      @media screen and (max-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        gap: 67px;
+      }
+
+      @media screen and (max-width: 576px) {
+        grid-template-columns: 1fr;
+        gap: 67px;
+      }
       .item {
         background-color: $bg-item-grey;
-        position: relative;
-        height: 360px;
         .item-info {
-          padding: 45px 57px;
+          padding: 0 40px;
           img {
             width: 100%;
           }

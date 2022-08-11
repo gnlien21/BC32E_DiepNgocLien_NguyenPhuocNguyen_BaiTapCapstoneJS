@@ -34,8 +34,7 @@ function renderProduct(arrProduct){
                             <button class="btn-buy-dark buy">Buy now</button>
                             <p>${sp.price}$</p>
                         
-                    </div>
-                    <i class="fa-regular fa-heart"></i>            
+                    </div>           
                 </div>
         `;
 

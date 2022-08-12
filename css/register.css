@@ -134,6 +134,7 @@ nav .container ul li.active a::after {
 }
 
 footer {
+<<<<<<< HEAD
   margin-top: 3rem;
 }
 
@@ -141,20 +142,36 @@ footer .top-footer {
   background-color: #F8F8F8;
 }
 
+=======
+  margin-top: 40px;
+}
+footer .top-footer {
+  background-color: #F8F8F8;
+}
+>>>>>>> origin/nguyen
 footer .top-footer .container {
   padding: 20px 0;
   margin: auto;
 }
+<<<<<<< HEAD
 
 footer .bottom-footer {
   background-color: #DEDDDC;
 }
 
+=======
+footer .bottom-footer {
+  background-color: #DEDDDC;
+}
+>>>>>>> origin/nguyen
 footer .bottom-footer .container {
   margin: auto;
   padding: 20px 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/nguyen
 footer h4 {
   color: #000;
   background-color: transparent;
@@ -162,21 +179,30 @@ footer h4 {
   font-weight: 600;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/nguyen
 footer li {
   color: #000;
   background-color: transparent;
   font-size: 13px;
   font-weight: 300;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/nguyen
 footer p {
   color: #000;
   background-color: transparent;
   font-size: 13px;
   font-weight: 300;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/nguyen
 footer a {
   color: #db8b88;
   background-color: transparent;
@@ -189,8 +215,47 @@ footer a {
   margin: 0 auto;
 }
 
+#thongBao {
+  display: flex;
+  position: relative;
+  bottom: -10px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .register-form h1 {
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+  .register-form .left,
+.register-form .right {
+    padding: 0 85px !important;
+  }
+}
+@media screen and (max-width: 991.98px) and (max-width: 767.98px) {
+  .register-form .gender-input {
+    flex-direction: column;
+  }
+  .register-form .gender-input .input-name {
+    position: absolute;
+    left: 82px;
+    top: 165px;
+  }
+  .register-form .gender-input #thongBao {
+    left: 0 !important;
+  }
+  .register-form .gender-input .wrapper {
+    margin-top: 40px !important;
+  }
+}
+@media screen and (max-width: 991.98px) and (max-width: 575.98px) {
+  .register-form .wrapper {
+    margin: 80px 0 0 -30px !important;
+  }
+}
 .register-form .container {
   background-color: #FFFCFC;
+  max-width: 1303px;
+  margin: 0 auto;
 }
 
 .register-form .container h1 {
@@ -199,8 +264,13 @@ footer a {
   background-color: transparent;
   font-size: 40px;
   font-weight: 400;
+  margin: 0 0 60px 504px;
+  width: 0;
+}
+.register-form .container .row {
   margin-bottom: 0;
 }
+<<<<<<< HEAD
 
 .register-form .container .form-group {
   padding: 62px 120px 40px;
@@ -209,10 +279,19 @@ footer a {
   grid-template-columns: 1fr 1fr;
   column-gap: 113px;
   gap: 33px 99px;
+=======
+.register-form .container .row .left {
+  padding: 0 50px 0 120px;
+}
+.register-form .container .row .right {
+  padding: 0 97px 0 72px;
+>>>>>>> origin/nguyen
 }
 
 .register-form .container .form-group .text-box {
   align-items: center;
+  height: 56px;
+  margin-bottom: 26px;
   border-bottom: solid 5px #AE18E2;
 }
 
@@ -225,10 +304,11 @@ footer a {
 
 .register-form .container .form-group .text-box input {
   box-shadow: none;
-  font-size: 30px;
+  font-size: 25px;
   border: none;
   outline: none;
   width: 100%;
+  padding-left: 20px;
   background-color: #FFFCFC;
 }
 
@@ -238,7 +318,18 @@ footer a {
   font-size: 20;
   font-weight: 300;
 }
+<<<<<<< HEAD
 
+=======
+.register-form .container .form-group .gender-input {
+  margin-top: 55px;
+}
+.register-form .container .form-group .gender-input #thongBao {
+  position: absolute;
+  bottom: -44px;
+  left: -104px;
+}
+>>>>>>> origin/nguyen
 .register-form .container .form-group .gender-input .input-name {
   color: #000;
   background-color: transparent;

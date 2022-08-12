@@ -29,6 +29,7 @@ function renderProduct(arrProduct){
                         <img src="${sp.image}" alt="" />
                         <h3>${sp.name.slice(0, 10)+'...'}</h3>
                         <p>${sp.shortDescription.slice(0, 10)+ '...'}</p>
+<<<<<<< HEAD
                     </div>
                     <div class="buy-button d-flex">
                             <button class="btn-buy-dark buy">Buy now</button>
@@ -36,8 +37,26 @@ function renderProduct(arrProduct){
                         
 
                     </div>           
+=======
+                        </div>
+                        <div class="buy-button d-flex">
+                                <button class="btn-buy-dark buy"><a href="../views/detail.html?productid=${sp.id}">Buy now </a></button>
+                                <p>${sp.price}$</p>
+                            
+                        </div>
+                </div>
+
+
+
+
+
+
+>>>>>>> origin/nguyen
 
         `;
+
+
+        
 
     }
     document.querySelector('#itemList').innerHTML = html;

@@ -174,6 +174,7 @@ nav .container ul li.active a::after {
 .featured-product .container .item-list .item {
   background-color: #F8F8F8;
   position: relative;
+  height: 360px;
 }
 .featured-product .container .item-list .item .item-info {
   padding: 45px 57px;
@@ -192,6 +193,7 @@ nav .container ul li.active a::after {
   background-color: transparent;
   font-size: 20px;
   font-weight: 300;
+  text-overflow: ellipsis;
 }
 .featured-product .container .item-list .item .buy-button .buy {
   width: 50%;
@@ -207,22 +209,58 @@ nav .container ul li.active a::after {
   padding: 17px 30px;
   margin-bottom: 0;
 }
-.featured-product .container .item-list .item .fa-heart {
+.featured-product .container .item-list .item i.fa-heart {
   position: absolute;
   width: 41px;
   height: 48px;
   left: 45px;
   top: 6px;
   color: #000;
+  font-size: 30px;
+  line-height: 30px;
 }
 
-footer .container {
-  max-width: 1280px;
-  margin: 0 auto;
+footer {
+  margin-top: 40px;
 }
-footer .container img {
-  width: 100%;
-  height: 242px;
+footer .top-footer {
+  background-color: #F8F8F8;
+}
+footer .top-footer .container {
+  padding: 20px 0;
+  margin: auto;
+}
+footer .bottom-footer {
+  background-color: #DEDDDC;
+}
+footer .bottom-footer .container {
+  margin: auto;
+  padding: 20px 0;
+}
+footer h4 {
+  color: #000;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer li {
+  color: #000;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 300;
+}
+footer p {
+  color: #000;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 300;
+}
+footer a {
+  color: #db8b88;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .backToTop {

@@ -37,6 +37,21 @@
   margin-top: 52px;
 }
 
+.backToTop {
+  font-size: 30px;
+  position: absolute;
+  right: 87px;
+  bottom: 22px;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 .header .container {
   background-color: #000000;
   max-width: 1280px;
@@ -107,13 +122,47 @@ nav .container ul li.active a::after {
   bottom: -10px;
 }
 
-footer .container {
-  max-width: 1280px;
-  margin: 0 auto;
+footer {
+  margin-top: 40px;
 }
-footer .container img {
-  width: 100%;
-  height: 242px;
+footer .top-footer {
+  background-color: #F8F8F8;
+}
+footer .top-footer .container {
+  padding: 20px 0;
+  margin: auto;
+}
+footer .bottom-footer {
+  background-color: #DEDDDC;
+}
+footer .bottom-footer .container {
+  margin: auto;
+  padding: 20px 0;
+}
+footer h4 {
+  color: #000;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer li {
+  color: #000;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 300;
+}
+footer p {
+  color: #000;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 300;
+}
+footer a {
+  color: #db8b88;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .container {
@@ -121,8 +170,47 @@ footer .container img {
   margin: 0 auto;
 }
 
+#thongBao {
+  display: flex;
+  position: relative;
+  bottom: -10px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .register-form h1 {
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+  .register-form .left,
+.register-form .right {
+    padding: 0 85px !important;
+  }
+}
+@media screen and (max-width: 991.98px) and (max-width: 767.98px) {
+  .register-form .gender-input {
+    flex-direction: column;
+  }
+  .register-form .gender-input .input-name {
+    position: absolute;
+    left: 82px;
+    top: 165px;
+  }
+  .register-form .gender-input #thongBao {
+    left: 0 !important;
+  }
+  .register-form .gender-input .wrapper {
+    margin-top: 40px !important;
+  }
+}
+@media screen and (max-width: 991.98px) and (max-width: 575.98px) {
+  .register-form .wrapper {
+    margin: 80px 0 0 -30px !important;
+  }
+}
 .register-form .container {
   background-color: #FFFCFC;
+  max-width: 1303px;
+  margin: 0 auto;
 }
 .register-form .container h1 {
   text-align: center;
@@ -130,18 +218,22 @@ footer .container img {
   background-color: transparent;
   font-size: 40px;
   font-weight: 400;
+  margin: 0 0 60px 504px;
+  width: 0;
+}
+.register-form .container .row {
   margin-bottom: 0;
 }
-.register-form .container .form-group {
-  padding: 62px 120px 40px;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 113px;
-  gap: 33px 99px;
+.register-form .container .row .left {
+  padding: 0 50px 0 120px;
+}
+.register-form .container .row .right {
+  padding: 0 97px 0 72px;
 }
 .register-form .container .form-group .text-box {
   align-items: center;
+  height: 56px;
+  margin-bottom: 26px;
   border-bottom: solid 5px #AE18E2;
 }
 .register-form .container .form-group .text-box .input-name {
@@ -152,10 +244,11 @@ footer .container img {
 }
 .register-form .container .form-group .text-box input {
   box-shadow: none;
-  font-size: 30px;
+  font-size: 25px;
   border: none;
   outline: none;
   width: 100%;
+  padding-left: 20px;
   background-color: #FFFCFC;
 }
 .register-form .container .form-group .text-box .required-field-alert {
@@ -163,6 +256,14 @@ footer .container img {
   background-color: transparent;
   font-size: 20;
   font-weight: 300;
+}
+.register-form .container .form-group .gender-input {
+  margin-top: 55px;
+}
+.register-form .container .form-group .gender-input #thongBao {
+  position: absolute;
+  bottom: -44px;
+  left: -104px;
 }
 .register-form .container .form-group .gender-input .input-name {
   color: #000;

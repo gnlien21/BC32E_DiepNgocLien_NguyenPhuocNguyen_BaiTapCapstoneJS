@@ -76,76 +76,109 @@
     <section class="register-form">
       <div class="container">
         <h1>Register</h1>
-        <div class="form-group row">
-          <div class="text-box d-flex">
-            <span class="input-name">Email</span>
-            <input
-              class="required"
-              id="email"
-              type="text"
-              name="email"
-            />
-            <span class="required-field-alert">(*)</span>
-          </div>
-          <div class="text-box d-flex">
-            <span class="input-name">Name</span>
-            <input
-              class="form-control required"
-              id="name"
-              type="text"
-              name="name"
-            />
-            <span class="required-field-alert">(*)</span>
-          </div>
-          <div class="text-box d-flex">
-            <span class="input-name">Password</span>
-            <input
-              class="required"
-              id="password"
-              type="password"
-              name="password"
-            />
-            <span class="required-field-alert">(*)</span>
-          </div>
-          <div class="text-box d-flex">
-            <span class="input-name">Phone</span>
-            <input
-              class="required"
-              id="phone"
-              type="number"
-              name="phone"
-            />
-            <span class="required-field-alert">(*)</span>
-          </div>
-          <div class="text-box d-flex">
-            <span class="input-name">Confirm</span>
-            <input
-              class="required"
-              id="passwordConfirm"
-              type="password"
-              name="passwordConfirm"
-            />
-            <span class="required-field-alert">(*)</span>
-          </div>
-          <div class="gender-input d-flex">
-            <span class="input-name">Gender</span>
-            <div class="wrapper">
-              <div class="check-radio">
-                
-                <input id="male"  class=" male radio" type="radio" name="gender"  />
-                <label for="male" class="label">Male</label>
-                <div class="root"></div>
+        <div  class="form-group row">
+          <div class="col-12 col-lg-6 left">
+            <div class="text-box">
+              <div class="d-flex">
+  
+                <span class="input-name">Email</span>
+                <input
+                  class="required"
+                  id="email"
+                  type="text"
+                  name="email"
+                />
+                <span class="required-field-alert">(*)</span>
               </div>
-              <div class="check-radio">
-
-                <input id="female"  class=" female radio" type="radio" name="gender"  />
-                <label for="female" class="label">Female</label>
-                <div class="root"></div>
+              <p id="thongBao" class="thongBaoEmail text-danger"></p>
+            </div>
+            <div class="text-box ">
+              <div class="d-flex">
+  
+                <span class="input-name">Password</span>
+                <input
+                  class="required"
+                  id="password"
+                  type="password"
+                  name="password"
+                />
+                <span class="required-field-alert">(*)</span>
               </div>
+              <p id="thongBao" class="thongBaoPassword text-danger"></p>
+            </div>
+            <div class="text-box">
+              <div class="d-flex">
+  
+                <span class="input-name">Confirm</span>
+                <input
+                  class="required"
+                  id="passwordConfirm"
+                  type="password"
+                  name="passwordConfirm"
+                />
+                <span class="required-field-alert">(*)</span>
+              </div>
+              <p id="thongBao" class="thongBaoPasswordConfirm text-danger"></p>
+  
             </div>
           </div>
-          <div></div>
-          <button class="btn-submit" id="btnSubmit">Submit</button>
+          <div class="col-12 col-lg-6 right">
+
+            <div class="text-box ">
+              <div class="d-flex">
+  
+                <span class="input-name">Name</span>
+                <input
+                  class=" required"
+                  id="name"
+                  type="text"
+                  name="name"
+                />
+                <span class="required-field-alert">(*)</span>
+              </div>
+              <p id="thongBao" class="thongBaoName text-danger"></p>
+            </div>
+            <div class="text-box">
+              <div class="d-flex">
+  
+                <span class="input-name">Phone</span>
+                <input
+                  class="required"
+                  id="phone"
+                  type="number"
+                  name="phone"
+                />
+                <span class="required-field-alert">(*)</span>
+              </div>
+              <p id="thongBao" class="thongBaoPhone text-danger"></p>
+  
+            </div>
+            
+            <div class="gender-input d-flex ">
+            
+              <span class="input-name">Gender</span>
+              <div class="wrapper">
+                <div class="check-radio">
+                  
+                  <input id="male"  class=" male radio" type="radio" name="gender"/>
+                  <label for="male" class="label">Male</label>
+                  <div class="root"></div>
+              <!-- <p id="thongBao" class="thongBaoCheck text-danger"></p> -->
+  
+                </div>
+                <div class="check-radio">
+  
+                  <input id="female"  class=" female radio" type="radio" name="gender"/>
+                  <label for="female" class="label">Female</label>
+                  <div class="root"></div>
+                </div>
+                <p id="thongBao" class="thongBaoCheck text-danger"></p>
+              </div>
+  
+            </div>
+            <div></div>
+            <button class="btn-submit" id="btnSubmit">Submit</button>
+          </div>
         </div>
       </div>
     </section>
@@ -227,8 +260,9 @@
       
       
     </script>
-    <script src="../js/info.js"></script>
-    <script src="../js/register.js"></script>
+    <script src="../method/info.js"></script>
+    <script src="../method/validation.js"></script>
+    <script src="../controllers/register.js"></script>
 
   </body>
 </html>

@@ -224,11 +224,10 @@ nav .container ul li.active a::after {
 
 .featured-product .container .item-list .item {
   background-color: #F8F8F8;
-<<<<<<< HEAD
-=======
+
   position: relative;
   height: 360px;
->>>>>>> origin/nguyen
+
 }
 
 .featured-product .container .item-list .item .item-info {
@@ -269,10 +268,10 @@ nav .container ul li.active a::after {
   padding: 17px 30px;
   margin-bottom: 0;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/nguyen
+
+
+
 .featured-product .container .item-list .item i.fa-heart {
   position: absolute;
   width: 41px;
@@ -285,44 +284,44 @@ nav .container ul li.active a::after {
 }
 
 footer {
-<<<<<<< HEAD
+
   margin-top: 3rem;
 }
 
 footer .top-footer {
   background-color: #F8F8F8;
-}
-
-=======
   margin-top: 40px;
 }
+
+
+
 footer .top-footer {
   background-color: #F8F8F8;
 }
->>>>>>> origin/nguyen
+
 footer .top-footer .container {
   padding: 20px 0;
   margin: auto;
 }
-<<<<<<< HEAD
+
 
 footer .bottom-footer {
   background-color: #DEDDDC;
 }
 
-=======
+
 footer .bottom-footer {
   background-color: #DEDDDC;
 }
->>>>>>> origin/nguyen
+
 footer .bottom-footer .container {
   margin: auto;
   padding: 20px 0;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/nguyen
+
+
+
 footer h4 {
   color: #000;
   background-color: transparent;
@@ -330,30 +329,28 @@ footer h4 {
   font-weight: 600;
   text-transform: uppercase;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/nguyen
+
+
+
 footer li {
   color: #000;
   background-color: transparent;
   font-size: 13px;
   font-weight: 300;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/nguyen
+
 footer p {
   color: #000;
   background-color: transparent;
   font-size: 13px;
   font-weight: 300;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/nguyen
+
+
+
 footer a {
   color: #db8b88;
   background-color: transparent;

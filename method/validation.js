@@ -112,7 +112,7 @@ function validation(){
 
     // }
     let valid = true;
-    valid = checkEmpty && checkRadio && checkEmail && letCheckLength && checkConfirm ;
+    valid = checkEmpty && checkRadio && checkEmail && CheckLength && checkConfirm ;
 
 
     if(valid){

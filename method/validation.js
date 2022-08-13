@@ -102,7 +102,7 @@ function validation(){
         var checkEmail = kiemTraEmail('#email')
     }
     if(checkEmptyPassword){
-      let CheckLength = kiemTraDoDai('#password', 4, 10)
+      var CheckLength = kiemTraDoDai('#password', 4, 10)
         if(checkEmptyPassword && CheckLength){
 
           var checkConfirm = confirmPassword()
